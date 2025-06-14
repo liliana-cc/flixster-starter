@@ -1,0 +1,17 @@
+.movie-item {
+    width: 200px;
+    height: auto;
+    display: block;
+    border: 2px solid #888;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.movie-item img {
+    padding-top: 18px;
+}
+
+.movie-item h4 {
+    margin-bottom: 10px;
+}
