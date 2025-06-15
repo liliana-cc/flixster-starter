@@ -1,5 +1,6 @@
 import './MovieList.css'
 import MovieCard from './MovieCard';
+import MovieModal from './MovieModal';
 
 import React, {useState, useEffect} from "react";  // know i will be using variables who's states update
 import axios from "axios"
@@ -23,7 +24,7 @@ const MovieList = () => {  // future ref: learning - api key exposed in frontend
                     `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`
                 );
                 setMovies(data.results);
-                console.log('First movie data:', data.results[0]); // This shows one movie's data
+                // console.log('First movie data:', data.results[0]); // This shows one movie's data
             } catch(err) {
                 console.error('Error fetching list: ', err);
             }
@@ -32,34 +33,49 @@ const MovieList = () => {  // future ref: learning - api key exposed in frontend
     }, []);
 
     const handleCardClick = async(id) => {  // using const bc function ref doesnt change btwn renders - async is used during api calls, it allows to use await rather than dealing w .then
+        console.log('Card clicked! ID:', id);
         setShowModal(true);  // modal becomes visible
         setSelectedMovies(null);  // modal has nothing to display -> trigger loading state?
         try {
             const { data } = await axios.get(  // await pauses execution until Promise resolves or rejects -> then continues w/ result
-                `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`
+                `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`  // can find url template in api docu. or just by looking at link :3
             );
             setSelectedMovies(data);  // modal has info to display! - component is rerendered whenever state changes
+            // console.log('More movie data:', data)
         } catch(err) {
             console.error(`Error fetching ${id}: `, err);  // might want to add user-friends err messages (soon)
         }
     };
 
+    const handleClose = () => {  // closing modal
+        setShowModal(false);
+        setSelectedMovies(null);
+    }
+
 
   return (
-    <div className="movie-list">
-        {movies.map((m) => (  // mapping thru to get data into individual card
-            <MovieCard  // actually helps show card on html (moviecard -> movielist -> app)
-                key={m.id}  // unique for each movie! (good identifier in case movies have same title)
-                title={m.title}
-                vote_average={m.vote_average}
-                poster_path={m.poster_path}
-                onClick={() => handleCardClick(m.id)}
-            />
-        ))}
+    <>
+        <div className="movie-list">
+            {movies.map((m) => (  // mapping thru to get data into individual card
+                <MovieCard  // actually helps show card on html (moviecard -> movielist -> app)
+                    key={m.id}  // unique for each movie! (good identifier in case movies have same title)
+                    title={m.title}
+                    vote_average={m.vote_average}
+                    poster_path={m.poster_path}
+                    onClick={() => handleCardClick(m.id)}
+                />
+            ))}
 
-        <p>API Key loaded: {apiKey ? 'Yes' : 'No'}</p>
-        <p>Movies count: {movies.length}</p>
-    </div>
+            {/*<p>API Key loaded: {apiKey ? 'Yes' : 'No'}</p>
+            <p>Movies count: {movies.length}</p>*/}
+        </div>
+        
+        <MovieModal 
+            show={showModal}
+            onClose={handleClose}
+            movie={selectedMovies}
+        />  
+    </>
   )
 }
 

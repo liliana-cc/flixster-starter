@@ -2,7 +2,7 @@
 
 ## Unit Assignment: Flixster
 
-Submitted by: **NAME**
+Submitted by: **Liliana Cantero**
 
 Estimated time spent: **#** hours spent in total
 
@@ -13,12 +13,12 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 #### REQUIRED FEATURES
 
 - [ ] **Display Movies**
-  - [ ] Users can view a list of current movies from The Movie Database API in a grid view.
-    - [ ] Movie tiles should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
-  - [ ] For each movie displayed, users can see the movie's:
-    - [ ] Title
-    - [ ] Poster image
-    - [ ] Vote average
+  - [x] Users can view a list of current movies from The Movie Database API in a grid view.
+    - [x] Movie tiles should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
+  - [x] For each movie displayed, users can see the movie's:
+    - [x] Title
+    - [x] Poster image
+    - [x] Vote average
   - [ ] Users can load more current movies by clicking a button which adds more movies to the grid without reloading the entire page. 
 - [ ] **Search Functionality**
   - [ ] Users can use a search bar to search for movies by title.
@@ -36,20 +36,20 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
   - [ ] Website implements all of the following accessibility features:
     - [ ] Semantic HTML
     - [ ] [Color contrast](https://webaim.org/resources/contrastchecker/)
-    - [ ] Alt text for images 
-  - [ ] Website implements responsive web design.
-    - [ ] Uses CSS Flexbox or CSS Grid
-    - [ ] Movie tiles and images shrink/grow in response to window size
-  - [ ] Users can click on a movie tile to view more details about a movie in a pop-up modal.
-    - [ ] The pop-up window is centered in the screen and does not occupy the entire screen.
+    - [x] Alt text for images 
+  - [x] Website implements responsive web design.
+    - [x] Uses CSS Flexbox or CSS Grid
+    - [x] Movie tiles and images shrink/grow in response to window size
+  - [x] Users can click on a movie tile to view more details about a movie in a pop-up modal.
+    - [x] The pop-up window is centered in the screen and does not occupy the entire screen.
     - [ ] The pop-up window has a shadow to show that it is a pop-up and appears floating on the screen.
-    - [ ] The backdrop of the pop-up appears darker or in a different shade than before. including:
-    - [ ] The pop-up displays additional details about the moving including:
-      - [ ] Runtime in minutes
-      - [ ] Backdrop poster
-      - [ ] Release date
-      - [ ] Genres
-      - [ ] An overview
+    - [x] The backdrop of the pop-up appears darker or in a different shade than before. including:
+    - [x] The pop-up displays additional details about the moving including:
+      - [x] Runtime in minutes
+      - [x] Backdrop poster
+      - [x] Release date
+      - [x] Genres
+      - [x] An overview
   - [ ] Users can use a drop-down menu to sort movies.
     - [ ] Drop-down allows movies to be sorted by:
       - [ ] Title (alphabetic, A-Z)
@@ -57,11 +57,11 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
       - [ ] Vote average (descending, highest to lowest)
     - [ ] When a sort option is clicked, movies display in a grid according to selected criterion.
   - [ ] Website displays:
-    - [ ] Header section
+    - [x] Header section
     - [ ] Banner section
     - [ ] Search bar
-    - [ ] Movie grid
-    - [ ] Footer section
+    - [x] Movie grid
+    - [x] Footer section
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading process, please use the [color contrast checker](https://webaim.org/resources/contrastchecker/) to demonstrate to the grading team that text and background colors on your website have appropriate contrast. The Contrast Ratio should be above 4.5:1 and should have a green box surrounding it. 
 
 #### STRETCH FEATURES

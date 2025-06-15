@@ -1,0 +1,33 @@
+.modal {  /* screen besides actual modal w/ contents */
+    position: fixed;
+    top: 0;  /* places modal at top left corner of screen -> flex properties in charge of centering*/
+    left: 0;
+    width: 100%;  /* backscreen (besides centered modal) takes up entire screen as the transparent backdrop/overlay */ 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* semi-transparent overlay */
+    display: flex;  /* modal container uses flex to center white content box both horizontally and vertically w/in the fullscreen overlay/transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;  /* controls which elements appear 'on top' when they overlap: z-index of 1000 ensures modal appears above everything else */
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;  /* to get y scroll bar */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.modal-header button {
+    background: rgba(128, 128, 128, 0.297);
+    border: 1px solid #888;
+    font-size: 20px;
+    cursor: pointer;
+}

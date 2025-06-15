@@ -4,7 +4,7 @@ const MovieCard = ({ title, vote_average, poster_path, onClick }) => {
   return (
     <>
         <div className="movie-item" onClick={onClick}>
-            <img src={`https://image.tmdb.org/t/p/w200${poster_path}`}/>
+            <img src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={`${title} poster`}/>
             <h3>{title}</h3>
             <h4>{vote_average}</h4>
 
