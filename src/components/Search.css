@@ -1,0 +1,16 @@
+form {
+    display: block;
+    margin: 0;
+    
+}
+#input-box {
+    border-radius: 20px;
+    padding: 10px;
+    width: 25vw;
+}
+button {
+    margin-left: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #888;
+    padding: 10px;
+}

@@ -12,26 +12,26 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 #### REQUIRED FEATURES
 
-- [ ] **Display Movies**
+- [x] **Display Movies**
   - [x] Users can view a list of current movies from The Movie Database API in a grid view.
     - [x] Movie tiles should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
   - [x] For each movie displayed, users can see the movie's:
     - [x] Title
     - [x] Poster image
     - [x] Vote average
-  - [ ] Users can load more current movies by clicking a button which adds more movies to the grid without reloading the entire page. 
-- [ ] **Search Functionality**
-  - [ ] Users can use a search bar to search for movies by title.
-  - [ ] The search bar should include:
-    - [ ] Text input field
-    - [ ] Submit/Search button
-    - [ ] Clear button
-  - [ ] Movies with a title containing the search query in the text input field are displayed in a grid view when the user either:
-    - [ ] Presses the Enter key
-    - [ ] Clicks the Submit/Search button
-  - [ ] Users can click the Clear button. When clicked:
-    - [ ] All text in the text input field is deleted
-    - [ ] The most recent search results are cleared from the text input field and the grid view and all current movies are displayed in a grid view
+  - [x] Users can load more current movies by clicking a button which adds more movies to the grid without reloading the entire page. 
+- [x] **Search Functionality**
+  - [x] Users can use a search bar to search for movies by title.
+  - [x] The search bar should include:
+    - [x] Text input field
+    - [x] Submit/Search button
+    - [x] Clear button
+  - [x] Movies with a title containing the search query in the text input field are displayed in a grid view when the user either:
+    - [x] Presses the Enter key
+    - [x] Clicks the Submit/Search button
+  - [x] Users can click the Clear button. When clicked:
+    - [x] All text in the text input field is deleted
+    - [x] The most recent search results are cleared from the text input field and the grid view and all current movies are displayed in a grid view
 - [ ] **Design Features**
   - [ ] Website implements all of the following accessibility features:
     - [ ] Semantic HTML
@@ -59,7 +59,7 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
   - [ ] Website displays:
     - [x] Header section
     - [ ] Banner section
-    - [ ] Search bar
+    - [x] Search bar
     - [x] Movie grid
     - [x] Footer section
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading process, please use the [color contrast checker](https://webaim.org/resources/contrastchecker/) to demonstrate to the grading team that text and background colors on your website have appropriate contrast. The Contrast Ratio should be above 4.5:1 and should have a green box surrounding it. 

@@ -1,14 +1,14 @@
 import './MovieList.css'
+import App from '../App';
 import MovieCard from './MovieCard';
 import MovieModal from './MovieModal';
 
-import React, {useState, useEffect} from "react";  // know i will be using variables who's states update
+import {useState, useEffect} from "react";  // know i will be using variables who's states update
 import axios from "axios"
 
-const MovieList = () => {  // future ref: learning - api key exposed in frontend (fetching list on mount)
-    const [movies, setMovies] = useState([]); 
+const MovieList = ({movies, searchResults, isSearchMode, loadMore, page}) => {  // future ref: learning - api key exposed in frontend (fetching list on mount)
     const [selectedMovies, setSelectedMovies] = useState(null);
-    const [showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);   
 
     const apiKey = import.meta.env.VITE_API_KEY;
     //console.log('API Key type:', typeof apiKey);
@@ -16,21 +16,6 @@ const MovieList = () => {  // future ref: learning - api key exposed in frontend
 
     const finalUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`;
     //console.log('Final URL being called:', finalUrl);
-
-    useEffect(() => {  // using useEffect bc only want to run once every render
-        const fetchMovies = async () => {
-            try {
-                const {data} = await axios.get(
-                    `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`
-                );
-                setMovies(data.results);
-                // console.log('First movie data:', data.results[0]); // This shows one movie's data
-            } catch(err) {
-                console.error('Error fetching list: ', err);
-            }
-        };
-        fetchMovies();  // calling our func (not just declaring ^)
-    }, []);
 
     const handleCardClick = async(id) => {  // using const bc function ref doesnt change btwn renders - async is used during api calls, it allows to use await rather than dealing w .then
         console.log('Card clicked! ID:', id);
@@ -47,28 +32,45 @@ const MovieList = () => {  // future ref: learning - api key exposed in frontend
         }
     };
 
+
     const handleClose = () => {  // closing modal
         setShowModal(false);
         setSelectedMovies(null);
     }
 
-
   return (
     <>
         <div className="movie-list">
-            {movies.map((m) => (  // mapping thru to get data into individual card
-                <MovieCard  // actually helps show card on html (moviecard -> movielist -> app)
+            {isSearchMode ?  // searchMode true -> load searchResults (else load)
+                searchResults ? searchResults.map((m) => (  // **alwaysss check if array exists before mapping over it
+                    <MovieCard  // actually helps show card on html (moviecard -> movielist -> app)
                     key={m.id}  // unique for each movie! (good identifier in case movies have same title)
                     title={m.title}
                     vote_average={m.vote_average}
                     poster_path={m.poster_path}
                     onClick={() => handleCardClick(m.id)}
                 />
-            ))}
+                )) : <p>Loading search results...</p>: (
+                movies ? movies.map((m) => (  // check if array exists before mapping over it
+                    <MovieCard  // actually helps show card on html (moviecard -> movielist -> app)
+                    key={m.id}  // unique for each movie! (good identifier in case movies have same title)
+                    title={m.title}
+                    vote_average={m.vote_average}
+                    poster_path={m.poster_path}
+                    onClick={() => handleCardClick(m.id)}
+                />)) : <p>Loading movies...</p>)
+            }
 
-            {/*<p>API Key loaded: {apiKey ? 'Yes' : 'No'}</p>
-            <p>Movies count: {movies.length}</p>*/}
         </div>
+        {!isSearchMode && (  // when search mode false, doesn't render load more button or all movies loaded
+        <div className='load-more'>
+            {page <= 260 ? (  
+                 <button onClick={loadMore}>Load More</button> /* using JUST loadMore, helps call only when button clicked (not loadMore() - this calls func immediately when component renders - all pages render)*/
+            ) : ( 
+                <p>All movies loaded!</p>  /* when limit reached show this */
+            )}
+           
+        </div> )}
         
         <MovieModal 
             show={showModal}

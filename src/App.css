@@ -24,6 +24,11 @@
   margin-top: 20px;
 }
 
+select {
+  border-radius: 20px;
+  padding: 10px;
+}
+
 @media (max-width: 600px) {
   .movie-card {
     width: 100%;
