@@ -26,7 +26,7 @@
 }
 .movie-info {
     padding: 20px;
-    background-image: url(src/assets/larger-single-film.png);
+    background-image: url(/src/assets/larger-single-film.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
