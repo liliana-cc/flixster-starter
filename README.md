@@ -32,17 +32,17 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
   - [x] Users can click the Clear button. When clicked:
     - [x] All text in the text input field is deleted
     - [x] The most recent search results are cleared from the text input field and the grid view and all current movies are displayed in a grid view
-- [ ] **Design Features**
-  - [ ] Website implements all of the following accessibility features:
-    - [ ] Semantic HTML
-    - [ ] [Color contrast](https://webaim.org/resources/contrastchecker/)
+- [x] **Design Features**
+  - [x] Website implements all of the following accessibility features:
+    - [x] Semantic HTML
+    - [x] [Color contrast](https://webaim.org/resources/contrastchecker/)
     - [x] Alt text for images 
   - [x] Website implements responsive web design.
     - [x] Uses CSS Flexbox or CSS Grid
     - [x] Movie tiles and images shrink/grow in response to window size
   - [x] Users can click on a movie tile to view more details about a movie in a pop-up modal.
     - [x] The pop-up window is centered in the screen and does not occupy the entire screen.
-    - [ ] The pop-up window has a shadow to show that it is a pop-up and appears floating on the screen.
+    - [x] The pop-up window has a shadow to show that it is a pop-up and appears floating on the screen.
     - [x] The backdrop of the pop-up appears darker or in a different shade than before. including:
     - [x] The pop-up displays additional details about the moving including:
       - [x] Runtime in minutes
@@ -50,15 +50,15 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
       - [x] Release date
       - [x] Genres
       - [x] An overview
-  - [ ] Users can use a drop-down menu to sort movies.
-    - [ ] Drop-down allows movies to be sorted by:
-      - [ ] Title (alphabetic, A-Z)
-      - [ ] Release date (chronologically, most recent to oldest)
-      - [ ] Vote average (descending, highest to lowest)
-    - [ ] When a sort option is clicked, movies display in a grid according to selected criterion.
-  - [ ] Website displays:
+  - [x] Users can use a drop-down menu to sort movies.
+    - [x] Drop-down allows movies to be sorted by:
+      - [x] Title (alphabetic, A-Z)
+      - [x] Release date (chronologically, most recent to oldest)
+      - [x] Vote average (descending, highest to lowest)
+    - [x] When a sort option is clicked, movies display in a grid according to selected criterion.
+  - [x] Website displays:
     - [x] Header section
-    - [ ] Banner section
+    - [x] Banner section
     - [x] Search bar
     - [x] Movie grid
     - [x] Footer section
@@ -69,9 +69,9 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 - [ ] **Deployment**
   - [ ] Website is deployed via Render.
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: For ease of grading, please use the deployed version of your website when creating your walkthrough. 
-- [ ] **Embedded Movie Trailers**
-  - [ ] Within the pop-up modal displaying a movie's details, the movie trailer is viewable.
-    - [ ] When the trailer is clicked, users can play the movie trailer.
+- [x] **Embedded Movie Trailers**
+  - [x] Within the pop-up modal displaying a movie's details, the movie trailer is viewable.
+    - [x] When the trailer is clicked, users can play the movie trailer.
 - [ ] **Favorite Button**
   - [ ] For each movie displayed, users can favorite the movie.
   - [ ] There should be visual element (such as a heart icon) on each movie's tile to show whether or not the movie has been favorited.

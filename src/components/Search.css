@@ -2,11 +2,15 @@ form {
     display: block;
     margin: 0;
     
-}
+}   
 #input-box {
     border-radius: 20px;
     padding: 10px;
     width: 25vw;
+}
+#input-box:hover, button:hover {
+    transform: translateY(-5px) scale(1.03);
+    cursor: pointer;
 }
 button {
     margin-left: 5px;

@@ -10,24 +10,42 @@
     align-items: center;
     z-index: 1000;  /* controls which elements appear 'on top' when they overlap: z-index of 1000 ensures modal appears above everything else */
 }
+.movie-backdrop {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .modal-content {
-    background: white;
-    padding: 20px;
+    background: antiquewhite;
     border-radius: 8px;
     max-width: 600px;
     max-height: 80vh;
     overflow-y: auto;  /* to get y scroll bar */
+    box-shadow: 0 4px 24px #ffcafd;
+    position: relative;  /* will allow close btn to be positioned properly */
 }
-
-.modal-header {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
+.movie-info {
+    padding: 20px;
+    background-image: url(src/assets/larger-single-film.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-
-.modal-header button {
+.modal-text {
+    background-color: #fff7fd;
+    border-radius: 20px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     background: rgba(128, 128, 128, 0.297);
     border: 1px solid #888;
     font-size: 20px;
     cursor: pointer;
+    z-index: 10;  /* ensures btn always stays on top of backdrop */
+}
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }
