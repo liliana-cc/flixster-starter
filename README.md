@@ -1,12 +1,10 @@
-📝 `NOTE` Use this template to initialize the contents of a README.md file for your application. As you work on your assignment over the course of the week, update the required or stretch features lists to indicate which features you have completed by changing `[ ]` to `[x]`. (🚫 Remove this paragraph before submitting your assignment.)
-
 ## Unit Assignment: Flixster
 
 Submitted by: **Liliana Cantero**
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: **9** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixster Deployed Site](https://flixster-starter-nmdz.onrender.com/)
 
 ### Application Features
 
@@ -62,13 +60,13 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
     - [x] Search bar
     - [x] Movie grid
     - [x] Footer section
-    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading process, please use the [color contrast checker](https://webaim.org/resources/contrastchecker/) to demonstrate to the grading team that text and background colors on your website have appropriate contrast. The Contrast Ratio should be above 4.5:1 and should have a green box surrounding it. 
+    - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading process, please use the [color contrast checker](https://webaim.org/resources/contrastchecker/) to demonstrate to the grading team that text and background colors on your website have appropriate contrast. The Contrast Ratio should be above 4.5:1 and should have a green box surrounding it. 
 
 #### STRETCH FEATURES
 
-- [ ] **Deployment**
-  - [ ] Website is deployed via Render.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: For ease of grading, please use the deployed version of your website when creating your walkthrough. 
+- [x] **Deployment**
+  - [x] Website is deployed via Render.
+  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: For ease of grading, please use the deployed version of your website when creating your walkthrough. 
 - [x] **Embedded Movie Trailers**
   - [x] Within the pop-up modal displaying a movie's details, the movie trailer is viewable.
     - [x] When the trailer is clicked, users can play the movie trailer.
@@ -102,31 +100,37 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
+[Project 3 Walkthrough](https://www.loom.com/share/77dc879305644a6c9ba84e90521d7720?sid=f8d577fa-2cfc-4236-802e-2458e01544a1)
 
-`ADD_EMBEDDED_CODE_HERE`
+`<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/77dc879305644a6c9ba84e90521d7720?sid=393831da-2e24-4731-989c-8715aae6b1b5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes, the topics on React, API usage, and props, really helped me complete this project. Example walkthroughs, like the Pokemon example, immensely helped out as well!
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+If I had more time, I might have been able to create the sidebar with the watched and favorited categories. I think they would've been amazing to implement! Also, I got inspiration from peers, and I would have loved to look into TMDb more, especially when it comes to the cast properties to reveal the actors in the movies!
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+Like I mentioned above, not only doing the project assigned, but also being able to go above and beyond because of interest is a skill I would like to attain. This time, while working on projects, I socialized more and went around to find css inspiration. I aim to ask for help from my peers more, and maybe in the future, build the confidence to try and help a peer one day!
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- https://imagecolorpicker.com/
+- https://stackoverflow.com/questions/35912731/how-to-create-a-simple-react-dropdown
+- https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+- https://developer.themoviedb.org/reference/movie-videos
+- demo pokemon github for examples on Modal & List
 
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+Shout out to all of my peers and all of the advisors! They are all truly talented people and help me find inspiration and strive to be a better programmer, presenter, designer, etc. I believe this program is truly rewiring my brain, in the sense that I feel more inclined to collaborate than I have in the past. But I am so grateful for this new skill I am picking up and can't wait to utilize it in the real-world and at my university in the future! As for the advisors, for this project, either before or after presenting, I consulted each one for help, whether that was with code or to vent about how I felt regarding the project and my presentation, which was at times: feeling behind, feeling as though my presentation was not as good as my last one, comparing myself to others who might have a better grasp at these topics, etc. I truly feel as though each advisor is a compassionate instructor, which is always great to encounter in the CS field. 
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
